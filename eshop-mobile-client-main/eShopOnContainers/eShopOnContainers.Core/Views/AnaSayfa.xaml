@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.AnaSayfa">
+    <Shell.TitleView >
+
+        <Image Source="https://marka-logo.com/wp-content/uploads/2020/12/Carrefour-Logo-1966-1972.jpg"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+               
+               HeightRequest="500"
+           />
+
+
+
+
+    </Shell.TitleView>
+    <!--<ContentPage.BindingContext>
+        <vm:AnasayfaViewModel />
+    </ContentPage.BindingContext>-->
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout BackgroundColor="White">
+
+
+
+                <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5">
+                    <SearchBar x:Name="searchResults" Placeholder="Ürün Ara" BackgroundColor="White" />
+                </Frame>
+
+
+                <StackLayout HeightRequest="100" Padding="5">
+                    <Frame CornerRadius="10" IsClippedToBounds="True" Padding="-15">
+                        <CarouselView x:Name="Slider"   >
+
+                            <CarouselView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <Image
+                                Source="{Binding}"
+                                />
+                                </DataTemplate>
+                            </CarouselView.ItemTemplate>
+                        </CarouselView>
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout>
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="MeyveSebzeClicked" BackgroundColor="White"
+                    
+                            Source="https://aslimgida.com/images/giris-meyveler.jpg"
+                            />
+
+                        </Frame>
+
+
+                        <Label Text="Meyve - Sebze" Padding="5" TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80"  Clicked="EtBalikKumesClicked" BackgroundColor="White"
+                    
+                            Source="https://haber50com.teimg.com/crop/1280x720/haber50-com/uploads/2022/04/et.jpg" 
+                            />
+
+                        </Frame>
+
+
+                        <Label Text="Et - Balık - Kümes"  Padding="5" TextColor="Black" ></Label>
+
+                    </StackLayout>
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="SutKahvaltilikClicked" BackgroundColor="White"
+                    
+                            Source="http://iyikahvalti.com/wp-content/uploads/2017/05/milk-500_0.jpg"
+                               
+                            />
+
+                        </Frame>
+
+
+                        <Label Text="Süt - kahvaltılık" Padding="5" TextColor="Black"></Label>
+
+                    </StackLayout>
+
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="İceceklerClicked"
+                    
+                            Source="https://order.com.tr/library/SogukIcecek-1577092527.jpg" BackgroundColor="White"
+                            />
+
+                        </Frame>
+
+
+                        <Label Text="İçecekler" Padding="5" TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="ElektronikClicked" 
+                    
+                             Source="https://img1.exportersindia.com/product_images/bc-full/dir_52/1554810/samsung-ue55d8000-3d-tv-276683.jpg" BackgroundColor="White" 
+                            />
+
+                        </Frame>
+
+
+                        <Label Text="Elektronik" x:Name="deneme" Padding="5" TextColor="Black" ></Label>
+
+                    </StackLayout>
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="BebekDunyasiClicked"
+                    
+                            Source="https://www.meltemhastanesi.com/uploads/images/1514898987964-bebek-gelisimi.jpg" BackgroundColor="White" 
+                                
+                             />
+
+                        </Frame>
+
+
+
+                        <Label Text="Bebek Dünyası" Padding="5" TextColor="Black" ></Label>
+
+                    </StackLayout>
+
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <StackLayout >
+
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+                            <ImageButton HeightRequest="80" WidthRequest="80"
+                    
+                                Source="https://www.7kkurumsaltemizlik.com/wp-content/uploads/zeytinburnu-kurumsal-toptan-temizlik-malzemeleri-tedarikcisi.jpg" BackgroundColor="White"
+                                />
+                        </Frame>
+
+                        <Label Text="Kağıt-Kozmetik" Padding="5" TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <StackLayout >
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" HorizontalOptions="Fill"
+                    
+                                Source="https://blog.akalkurumsal.com.tr/wp-content/uploads/2019/07/endustriyel-temizlik-urunleri-nelerdir.jpg" BackgroundColor="White" 
+                                />
+
+                        </Frame>
+
+
+                        <Label Text="Temizlik Ürünleri"  Padding="5" TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <StackLayout >
+
+
+                        <Frame BorderColor="LightGray" CornerRadius="8">
+
+                            <ImageButton HeightRequest="80" WidthRequest="80" HorizontalOptions="Fill"
+                    
+                                Source="https://previews.123rf.com/images/lestertair/lestertair1208/lestertair120800442/14901472-piatti-di-cibo-messicano-presso-il-ristorante-su-uno-sfondo-bianco.jpg" BackgroundColor="White" 
+                               
+                    />
+
+
+
+                            <!--<Button Text="Profilim" Clicked="ProfilimClicked"></Button>-->
+
+                        </Frame>
+                        <Label Text="Gıda-Şekerleme" Padding="5" TextColor="Black"></Label>
+                    </StackLayout>
+
+
+
+
+                </StackLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

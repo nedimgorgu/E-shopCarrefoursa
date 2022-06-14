@@ -252,7 +252,15 @@
                 RowSpacing="0">
                 <Label
                   Text="[ Giriş Yap ]"
-                  Style="{StaticResource LoginButtonStyle}"/>
+                  Style="{StaticResource LoginButtonStyle}"
+                    
+                   >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding LoginClicked}" />
+                    </Label.GestureRecognizers>
+                </Label>
+                    
+                
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer
                         Command="{Binding MockSignInCommand}"
