@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.AltKategori5">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5">
+                <SearchBar Placeholder="Ürün Ara" BackgroundColor="White"/>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" Margin="15" >
+
+                <StackLayout  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="TelefonClicked"
+                    
+                        Source="https://thumbs.dreamstime.com/b/mobile-phone-apps-white-background-cell-phone-illustrati-illustration-50066019.jpg" BackgroundColor="White"
+                        />
+
+                    </Frame>
+
+
+                    <Label Text="Telefon" TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="BulasikMakinesiClicked"
+                    
+                        Source="https://thumbs.dreamstime.com/b/washing-machine-front-view-20836613.jpg" BackgroundColor="White"
+                        />
+
+                    </Frame>
+
+                    <Label Text="Bulaşık Makinesi" TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout  HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="BuzdolabiClicked"
+                    
+                        Source="https://img.paratic.com/dosya/2015/05/dunyanin-en-pahali-buzdolaplari-energy-star.jpg" BackgroundColor="White"
+                        />
+
+
+                    </Frame>
+
+                    <Label Text="Buzdolabı" TextColor="Black" />
+                </StackLayout>
+
+
+
+            </StackLayout>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

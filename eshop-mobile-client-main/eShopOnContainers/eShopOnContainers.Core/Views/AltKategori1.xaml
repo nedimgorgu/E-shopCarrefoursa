@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.AltKategori1">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5" >
+                <SearchBar Placeholder="Ürün Ara" BackgroundColor="White"  />
+            </Frame>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" >
+
+                        <StackLayout>
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton Source="https://thumbs.dreamstime.com/b/red-meat-chunk-steak-isolated-over-white-background-huge-33490994.jpg" Clicked="KirmiziEtClicked"
+                                             WidthRequest="80" HeightRequest="80" BackgroundColor="White" />
+
+
+                            </Frame>
+
+                            <Label Text="Kırmızı Etler" Padding="5" TextColor="Black"/>
+
+                        </StackLayout>
+
+                        <StackLayout>
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton Source="https://thumbs.dreamstime.com/b/seafood-isolated-white-background-37998691.jpg" Clicked="DenizMahsulleriClicked"
+                                             WidthRequest="80" HeightRequest="80" BackgroundColor="White" />
+
+
+                            </Frame>
+
+                            <Label Text="Deniz Mahsülleri" Padding="5" TextColor="Black"/>
+
+                        </StackLayout>
+
+
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

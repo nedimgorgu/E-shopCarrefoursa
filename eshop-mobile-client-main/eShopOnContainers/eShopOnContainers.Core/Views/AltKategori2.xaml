@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.AltKategori2">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5" >
+                <SearchBar Placeholder="Ürün Ara" BackgroundColor="White"  />
+            </Frame>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+                        <StackLayout>
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton Source="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1899382.jpg" Clicked="MeyveClicked"
+                                             WidthRequest="80" HeightRequest="80" BackgroundColor="White"/>
+
+
+                            </Frame>
+
+                            <Label Text="Meyveler" TextColor="Black" Padding="5" />
+
+
+                        </StackLayout>
+
+                        <StackLayout>
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton Source="https://i.pinimg.com/736x/61/56/6b/61566b8967b94f2d09ac48aa8ebb9463.jpg" Clicked="SebzeClicked"
+                                             WidthRequest="80" HeightRequest="80" BackgroundColor="White"/>
+
+
+                            </Frame>
+
+                            <Label Text="Sebzeler" TextColor="Black" Padding="5" />
+
+
+                        </StackLayout>
+
+
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+
+
+
+
+
+
+            </StackLayout>
+
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

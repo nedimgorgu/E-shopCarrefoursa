@@ -33,32 +33,32 @@ namespace eShopOnContainers.Core.Views
 
         private async void MeyveSebzeClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new AltKategori2());
         }
 
         private async void EtBalikKumesClicked(object sender, EventArgs e)
         {
-           
+            await Navigation.PushModalAsync(new AltKategori1());
         }
 
         private async void SutKahvaltilikClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new AltKategori3());
         }
 
         private async void İceceklerClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new AltKategori4());
         }
 
         private async void ElektronikClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new AltKategori5());
         }
 
         private async void BebekDunyasiClicked(object sender, EventArgs e)
         {
-           
+            await Navigation.PushModalAsync(new AltKategori6());
         }
 
     }

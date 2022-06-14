@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.AltKategori4">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5" >
+                <SearchBar Placeholder="Ürün Ara" BackgroundColor="White"  />
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" Margin="15">
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="SuClicked"
+                    
+                         Source="https://i.pinimg.com/736x/e6/f5/1b/e6f51b2ddb746e33a98dc9a5c6e1b1e3.jpg" BackgroundColor="White"
+                         />
+
+                    </Frame>
+
+                    <Label Text="Su"
+                HorizontalOptions="StartAndExpand" TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="CayClicked"
+                    
+                        Source="https://as2.ftcdn.net/v2/jpg/02/71/30/07/1000_F_271300707_gx7DCjQUJ8kwQE9CnMfwV74OgMY5JC5p.jpg" BackgroundColor="White"
+                        />
+
+                    </Frame>
+
+                    <Label Text="Çay"
+                HorizontalOptions="StartAndExpand" TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="KahveClicked"
+                    
+                             Source="https://thumbs.dreamstime.com/b/cup-coffee-coffee-beans-isolated-white-background-copy-space-text-coffee-cup-beans-isolated-white-background-164317823.jpg" BackgroundColor="White" />
+
+
+
+                    </Frame>
+
+                    <Label Text="Kahve" 
+                     HorizontalOptions="StartAndExpand" TextColor="Black" />
+                </StackLayout>
+
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="15">
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="GazozClicked"
+                    
+                        Source="https://preview.pixlr.com/images/800wm/1052/2/1052202042.jpg" BackgroundColor="White"
+                        />
+
+                    </Frame>
+
+                    <Label Text="Gazoz"
+                HorizontalOptions="StartAndExpand" TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="KolaClicked"
+                    
+                        Source="https://i.pinimg.com/736x/d0/00/1b/d0001bf1830d7bef38c152a400440dd1.jpg" BackgroundColor="White"
+                        />
+
+                    </Frame>
+
+                    <Label Text="Kola" 
+                HorizontalOptions="StartAndExpand" TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Frame BorderColor="LightGray" CornerRadius="8">
+
+                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="EnergyDrinkClicked"
+                    
+                            Source="https://africa-images.com/public/photos/i/4/i4MVuNydcAcpWZ5l3hA5F7wJC/i4MVuNydcAcpWZ5l3hA5F7wJC_normal.jpg" BackgroundColor="White"
+                            />
+
+                    </Frame>
+
+                    <Label Text="Enerji İçeceği"
+                HorizontalOptions="StartAndExpand" TextColor="Black"/>
+                </StackLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

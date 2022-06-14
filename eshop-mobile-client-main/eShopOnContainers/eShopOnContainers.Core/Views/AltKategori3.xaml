@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.AltKategori3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5" >
+                <SearchBar Placeholder="Ürün Ara" BackgroundColor="White"  />
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+
+                        <StackLayout >
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton HeightRequest="80" WidthRequest="80" Clicked="SutClicked" BackgroundColor="White"
+                    
+                            Source="https://previews.123rf.com/images/begun1983/begun19831808/begun1983180800133/106800087-milk-bottle-in-vector-on-white-background-.jpg"
+                            />
+
+                            </Frame>
+
+
+                            <Label Text="Süt" Padding="5" TextColor="Black"></Label>
+
+                        </StackLayout>
+                        <StackLayout >
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton HeightRequest="80" WidthRequest="80"  Clicked="YogurtClicked" BackgroundColor="White"
+                    
+                            Source="https://en.pimg.jp/070/183/019/1/70183019.jpg" 
+                            />
+
+                            </Frame>
+
+
+                            <Label Text="Yoğurt"  Padding="5" TextColor="Black" ></Label>
+
+                        </StackLayout>
+                        <StackLayout >
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Clicked="PeynirClicked"
+                    
+                            Source="https://previews.123rf.com/images/draghicich/draghicich1208/draghicich120800339/14653126-fromage-suisse-isol%C3%A9-sur-un-fond-blanc.jpg"
+                               
+                            />
+
+                            </Frame>
+
+
+                            <Label Text="Peynir" Padding="5" TextColor="Black"></Label>
+
+                        </StackLayout>
+
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+                        <StackLayout >
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Clicked="ZeytinClicked"
+                    
+                            Source="https://thumbs.dreamstime.com/b/green-olives-isolated-white-background-top-view-flat-lay-green-black-olives-isolated-white-background-top-view-flat-158055605.jpg"
+                               
+                            />
+
+                            </Frame>
+
+
+                            <Label Text="Zeytin" Padding="5" TextColor="Black"></Label>
+
+                        </StackLayout>
+
+                        <StackLayout >
+
+                            <Frame BorderColor="LightGray" CornerRadius="8">
+
+                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Clicked="YumurtaClicked"
+                    
+                            Source="https://previews.123rf.com/images/natika/natika1204/natika120401980/13295500-shell-huevo-sobre-fondo-blanco.jpg" 
+                               
+                            />
+
+                            </Frame>
+
+
+                            <Label Text="Yumurta" Padding="5" TextColor="Black"></Label>
+
+                        </StackLayout>
+
+
+
+
+
+                    </StackLayout>
+
+
+
+
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
