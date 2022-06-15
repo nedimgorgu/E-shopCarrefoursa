@@ -19,27 +19,27 @@ namespace eShopOnContainers.Core.Views
 
         private async void SutClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new SütView());
         }
 
         private async void YogurtClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new YogurtView());
         }
 
         private async void PeynirClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new PeynirView());
         }
 
         private async void ZeytinClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new ZeytinView());
         }
 
         private async void YumurtaClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new YumurtaView());
         }
 
     }

@@ -10,21 +10,28 @@ using Xamarin.Forms.Xaml;
 namespace eShopOnContainers.Core.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AltKategori2 : ContentPage
+    public partial class BebekBeziView : ContentPage
     {
-        public AltKategori2()
+        public BebekBeziView()
         {
             InitializeComponent();
         }
 
-        private async void MeyveClicked(object sender, EventArgs e)
+        private void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new MeyveView());
+
+        }
+        
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
 
-        private async void SebzeClicked(object sender, EventArgs e)
+        private void bebekBeziListesi_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            await Navigation.PushModalAsync(new SebzeView());
+
         }
+
+        
     }
 }

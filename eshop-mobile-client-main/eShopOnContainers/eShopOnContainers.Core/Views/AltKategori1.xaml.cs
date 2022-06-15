@@ -20,12 +20,12 @@ namespace eShopOnContainers.Core.Views
 
         private async void KirmiziEtClicked(object sender, EventArgs e)
         {
-           
+            await Navigation.PushModalAsync(new KırmızıEtKategorisiView());
         }
 
         private async void DenizMahsulleriClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new DenizMahsulleriKategorisiView());
         }
     }
 }

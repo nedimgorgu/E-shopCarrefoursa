@@ -19,17 +19,17 @@ namespace eShopOnContainers.Core.Views
 
         private async void TelefonClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new TelefonView());
         }
 
         private async void BulasikMakinesiClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new BulasikMakinesiView());
         }
 
         private async void BuzdolabiClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new BuzDolabiView());
         }
 
     }
