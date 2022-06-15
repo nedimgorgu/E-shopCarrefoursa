@@ -32,6 +32,7 @@
 
     <TabBar Route="Main">
         <ShellContent Title="Ana Sayfa" Route="Catalog" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:AnaSayfa}" />
+        <ShellContent Title="Arama" Icon="https://pics.freeicons.io/uploads/icons/png/15028084081543238917-512.png" ContentTemplate="{DataTemplate views:Aramalar}" />
         <ShellContent Title="Profile"  Route="Profile" Icon="{StaticResource ProfileIconImageSource}" ContentTemplate="{DataTemplate views:ProfileView}" />
     </TabBar>
 </Shell>
