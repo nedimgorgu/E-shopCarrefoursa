@@ -1,4 +1,6 @@
-﻿using System;
+﻿using eShopOnContainers.Core.ViewModels;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +14,16 @@ namespace eShopOnContainers.Core.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AltKategori1 : ContentPage
     {
+
+
         public AltKategori1()
         {
             InitializeComponent();
+            BindingContext = new AltKategori1ViewModel(Navigation);
+
         }
 
 
-        private async void KirmiziEtClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new KırmızıEtKategorisiView());
-        }
 
-        private async void DenizMahsulleriClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new DenizMahsulleriKategorisiView());
-        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eShopOnContainers.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,51 +16,10 @@ namespace eShopOnContainers.Core.Views
         public AnaSayfa()
         {
             InitializeComponent();
+            BindingContext = new AnasayfaViewModel(Navigation);
 
-
-            var images = new List<string>
-            {
-                "https://reimg-carrefour.mncdn.com/bannerimage/7desk-coksatan-7042022-2-min_0_MC/8840692170802.png",
-                "https://reimg-carrefour.mncdn.com/bannerimage/7-20nisan-desk-gida_0_MC/8840603074610.png",
-                "https://reimg-carrefour.mncdn.com/bannerimage/5-20desk-toz-deterjan-min_0_MC/8840593539122.png",
-                "https://reimg-carrefour.mncdn.com/bannerimage/desk-ats-7042022-min_0_MC/8840690368562.png"
-            };
-
-
-            Slider.ItemsSource = images;
-
-
+            var images = new AnasayfaViewModel(Navigation);
+            fotolar.ItemsSource = images.SliderList;
         }
-
-        private async void MeyveSebzeClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new AltKategori2());
-        }
-
-        private async void EtBalikKumesClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new AltKategori1());
-        }
-
-        private async void SutKahvaltilikClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new AltKategori3());
-        }
-
-        private async void İceceklerClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new AltKategori4());
-        }
-
-        private async void ElektronikClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new AltKategori5());
-        }
-
-        private async void BebekDunyasiClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new AltKategori6());
-        }
-
     }
 }

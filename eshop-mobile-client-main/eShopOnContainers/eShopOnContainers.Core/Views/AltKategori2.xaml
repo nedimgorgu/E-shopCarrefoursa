@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.AltKategori2">
+             x:Class="eShopOnContainers.Core.Views.AltKategori2"
+             xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:DataType="viewmodels:AltKategori2ViewModel"
+             >
     <ContentPage.Content>
         <StackLayout>
 
@@ -17,9 +20,9 @@
 
                         <StackLayout>
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton Source="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1899382.jpg" Clicked="MeyveClicked"
+                                <ImageButton Source="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1899382.jpg" Command="{Binding MeyveButonu}"
                                              WidthRequest="80" HeightRequest="80" BackgroundColor="White"/>
 
 
@@ -32,9 +35,9 @@
 
                         <StackLayout>
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton Source="https://i.pinimg.com/736x/61/56/6b/61566b8967b94f2d09ac48aa8ebb9463.jpg" Clicked="SebzeClicked"
+                                <ImageButton Source="https://i.pinimg.com/736x/61/56/6b/61566b8967b94f2d09ac48aa8ebb9463.jpg" Command="{Binding SebzeButonu}"
                                              WidthRequest="80" HeightRequest="80" BackgroundColor="White"/>
 
 

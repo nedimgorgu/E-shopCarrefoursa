@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eShopOnContainers.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,22 +16,10 @@ namespace eShopOnContainers.Core.Views
         public AltKategori5()
         {
             InitializeComponent();
+            BindingContext = new AltKategori5ViewModel(Navigation);
         }
 
-        private async void TelefonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new TelefonView());
-        }
-
-        private async void BulasikMakinesiClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new BulasikMakinesiView());
-        }
-
-        private async void BuzdolabiClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new BuzDolabiView());
-        }
+        
 
     }
 }

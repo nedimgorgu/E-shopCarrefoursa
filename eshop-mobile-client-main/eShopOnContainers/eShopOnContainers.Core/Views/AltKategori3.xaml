@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.AltKategori3">
+             x:Class="eShopOnContainers.Core.Views.AltKategori3"
+             xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:DataType="viewmodels:AltKategori3ViewModel"
+             >
     <ContentPage.Content>
         <StackLayout>
             <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5" >
@@ -18,9 +21,9 @@
 
                         <StackLayout >
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton HeightRequest="80" WidthRequest="80" Clicked="SutClicked" BackgroundColor="White"
+                                <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding SutButonu }" BackgroundColor="White"
                     
                             Source="https://previews.123rf.com/images/begun1983/begun19831808/begun1983180800133/106800087-milk-bottle-in-vector-on-white-background-.jpg"
                             />
@@ -33,9 +36,9 @@
                         </StackLayout>
                         <StackLayout >
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton HeightRequest="80" WidthRequest="80"  Clicked="YogurtClicked" BackgroundColor="White"
+                                <ImageButton HeightRequest="80" WidthRequest="80"  Command="{Binding YogurtButonu}" BackgroundColor="White"
                     
                             Source="https://en.pimg.jp/070/183/019/1/70183019.jpg" 
                             />
@@ -48,9 +51,9 @@
                         </StackLayout>
                         <StackLayout >
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Clicked="PeynirClicked"
+                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Command="{Binding PeynirButonu}"
                     
                             Source="https://previews.123rf.com/images/draghicich/draghicich1208/draghicich120800339/14653126-fromage-suisse-isol%C3%A9-sur-un-fond-blanc.jpg"
                                
@@ -71,9 +74,9 @@
 
                         <StackLayout >
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Clicked="ZeytinClicked"
+                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Command="{Binding ZeytinButonu}"
                     
                             Source="https://thumbs.dreamstime.com/b/green-olives-isolated-white-background-top-view-flat-lay-green-black-olives-isolated-white-background-top-view-flat-158055605.jpg"
                                
@@ -88,9 +91,9 @@
 
                         <StackLayout >
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Clicked="YumurtaClicked"
+                                <ImageButton HeightRequest="80" WidthRequest="80" BackgroundColor="White" Command="{Binding YumurtaButonu}"
                     
                             Source="https://previews.123rf.com/images/natika/natika1204/natika120401980/13295500-shell-huevo-sobre-fondo-blanco.jpg" 
                                

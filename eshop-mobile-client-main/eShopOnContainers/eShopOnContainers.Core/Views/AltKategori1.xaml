@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.AltKategori1">
+             x:Class="eShopOnContainers.Core.Views.AltKategori1"
+             xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:DataType="viewmodels:AltKategori1ViewModel"
+             >
+    
     <ContentPage.Content>
         <StackLayout>
 
@@ -16,9 +20,10 @@
 
                         <StackLayout>
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton Source="https://thumbs.dreamstime.com/b/red-meat-chunk-steak-isolated-over-white-background-huge-33490994.jpg" Clicked="KirmiziEtClicked"
+                                <ImageButton Source="https://thumbs.dreamstime.com/b/red-meat-chunk-steak-isolated-over-white-background-huge-33490994.jpg" Command="{Binding KırmızıEtKategorisiButonu}" 
+                                            
                                              WidthRequest="80" HeightRequest="80" BackgroundColor="White" />
 
 
@@ -30,9 +35,9 @@
 
                         <StackLayout>
 
-                            <Frame BorderColor="LightGray" CornerRadius="8">
+                            <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                                <ImageButton Source="https://thumbs.dreamstime.com/b/seafood-isolated-white-background-37998691.jpg" Clicked="DenizMahsulleriClicked"
+                                <ImageButton Source="https://thumbs.dreamstime.com/b/seafood-isolated-white-background-37998691.jpg" Command="{Binding DenizMahsulleriKategorisiButonu}"
                                              WidthRequest="80" HeightRequest="80" BackgroundColor="White" />
 
 

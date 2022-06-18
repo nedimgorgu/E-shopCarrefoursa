@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eShopOnContainers.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,32 +16,10 @@ namespace eShopOnContainers.Core.Views
         public AltKategori3()
         {
             InitializeComponent();
+            BindingContext = new AltKategori3ViewModel(Navigation);
         }
 
-        private async void SutClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new SütView());
-        }
-
-        private async void YogurtClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new YogurtView());
-        }
-
-        private async void PeynirClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new PeynirView());
-        }
-
-        private async void ZeytinClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ZeytinView());
-        }
-
-        private async void YumurtaClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new YumurtaView());
-        }
+        
 
     }
 }

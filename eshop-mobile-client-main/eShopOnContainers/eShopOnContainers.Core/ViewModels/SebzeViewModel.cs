@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace eShopOnContainers.Core.ViewModels
 {
@@ -11,8 +13,11 @@ namespace eShopOnContainers.Core.ViewModels
 
         public ObservableCollection<Product> SebzeListesi { get; set; }
 
+        
+
         public SebzeViewModel()
         {
+
 
             SebzeListesi = new ObservableCollection<Product>()
             {
@@ -25,9 +30,15 @@ namespace eShopOnContainers.Core.ViewModels
 
 
             };
-
-
-
         }
+
+
+
+
+        
+
+
+
+
     }
 }

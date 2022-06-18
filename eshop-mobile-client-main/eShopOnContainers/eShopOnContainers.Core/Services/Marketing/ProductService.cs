@@ -41,5 +41,33 @@ namespace eShopOnContainers.Core.Services.Marketing
 
         }
 
+        public async Task RemoveBasket(int productId)
+        {
+
+            await productDb.DeleteProductFromBasket(productId);
+
+        }
+
+        public async Task RemoveFavorite(int productId)
+        {
+
+            await productDb.DeleteProductFromFavorite(productId);
+
+        }
+
+        public async Task<List<Product>> GetAllProductFromBasket()
+        {
+
+            return await productDb.GetAllProductFromBasket();
+
+        }
+
+        public async Task<List<Product>> GetAllProductFromFavorite()
+        {
+
+            return await productDb.GetAllProductFromFavorite();
+
+        }
+
     }
 }

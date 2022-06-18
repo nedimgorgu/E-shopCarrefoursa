@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.AltKategori6">
+             x:Class="eShopOnContainers.Core.Views.AltKategori6"
+             xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:DataType="viewmodels:AltKategori6ViewModel">
     <ContentPage.Content>
         <StackLayout>
 
@@ -20,7 +22,7 @@
 
                             <Frame BorderColor="LightGray" CornerRadius="8">
 
-                                <ImageButton WidthRequest="80" HeightRequest="80" BackgroundColor="White" Clicked="BebekBeziClicked"
+                                <ImageButton WidthRequest="80" HeightRequest="80" BackgroundColor="White" Command="{Binding BebekBeziButonu}"
                     
                                 Source="https://previews.123rf.com/images/shauerman/shauerman2002/shauerman200200027/139491013-disposable-white-baby-diaper-panties-on-a-white-background-isolated.jpg" 
                                 />
@@ -37,7 +39,7 @@
 
                             <Frame BorderColor="LightGray" CornerRadius="8">
 
-                                <ImageButton WidthRequest="80" HeightRequest="80" BackgroundColor="White" Clicked="IslakHavluClicked"
+                                <ImageButton WidthRequest="80" HeightRequest="80" BackgroundColor="White" Command="{Binding IslakHavluButonu}"
                     
                                 Source="https://previews.123rf.com/images/doomu/doomu1712/doomu171200081/92410679-blue-blank-packaging-paper-wet-wipes-pouch-on-a-white-background-3d-rendering.jpg" 
                                 />
@@ -52,7 +54,7 @@
 
                             <Frame BorderColor="LightGray" CornerRadius="8">
 
-                                <ImageButton WidthRequest="80" HeightRequest="80" BackgroundColor="White" Clicked="BebekSampuaniClicked"
+                                <ImageButton WidthRequest="80" HeightRequest="80" BackgroundColor="White" Command="{Binding BebekSampuaniButonu}"
                     
                                 Source="https://previews.123rf.com/images/belchonock/belchonock1903/belchonock190308543/118790417-baby-cosmetic-products-and-toy-on-white-background.jpg" 
                                 />

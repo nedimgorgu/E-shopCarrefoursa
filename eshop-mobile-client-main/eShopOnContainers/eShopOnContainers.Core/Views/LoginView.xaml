@@ -46,7 +46,7 @@
                 <Setter Property="FontSize"
                     Value="{StaticResource LittleSize}" />
                 <Setter Property="TextColor"
-                    Value="#0192FF" />
+                    Value="#FD1919" />
                 <Setter Property="HorizontalOptions"
                     Value="Start" />
             </Style>
@@ -142,13 +142,13 @@
                   HorizontalOptions="Center">
                     <Label     
                         Text="["
-                        TextColor="#0192FF"/>
+                        TextColor="#FD1919"/>
                     <Label
                         Text="Giriş"
                         FontAttributes="Bold"/>
                     <Label
                         Text="]"
-                        TextColor="#0192FF"/>
+                        TextColor="#FD1919"/>
                 </StackLayout>
                 <Grid
                   Grid.Column="1"
@@ -240,12 +240,12 @@
                    HorizontalOptions="Center"
                    Grid.Row="2" >
                 <Image
-                    Source="https://www.forumistanbul.com.tr/media/image/XOSGDP5860U4JF.png"
+                    Source="https://sikayetmerkezi.com/img/firma/8883070istegelsin.png"
                     Aspect="AspectFit" />
             </Frame>
             <!-- LOGIN BUTTON -->
             <Grid
-                BackgroundColor="#0192FF"
+                BackgroundColor="#FD1919"
                 Grid.Row="4"
                 Padding="0"
                 ColumnSpacing="0"

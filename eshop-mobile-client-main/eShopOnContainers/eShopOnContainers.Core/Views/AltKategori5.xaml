@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.AltKategori5">
+             x:Class="eShopOnContainers.Core.Views.AltKategori5"
+             xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:DataType="viewmodels:AltKategori5ViewModel"
+             >
     <ContentPage.Content>
         <StackLayout>
 
@@ -14,7 +17,7 @@
                 <StackLayout  HorizontalOptions="StartAndExpand" VerticalOptions="Center">
 
                     <Frame BorderColor="LightGray" CornerRadius="8">
-                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="TelefonClicked"
+                        <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding TelefonButonu}"
                     
                         Source="https://thumbs.dreamstime.com/b/mobile-phone-apps-white-background-cell-phone-illustrati-illustration-50066019.jpg" BackgroundColor="White"
                         />
@@ -28,7 +31,7 @@
                 <StackLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
 
                     <Frame BorderColor="LightGray" CornerRadius="8">
-                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="BulasikMakinesiClicked"
+                        <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding BulasikMakinesiButonu}"
                     
                         Source="https://thumbs.dreamstime.com/b/washing-machine-front-view-20836613.jpg" BackgroundColor="White"
                         />
@@ -41,7 +44,7 @@
                 <StackLayout  HorizontalOptions="EndAndExpand" VerticalOptions="Center">
 
                     <Frame BorderColor="LightGray" CornerRadius="8">
-                        <ImageButton HeightRequest="80" WidthRequest="80" Clicked="BuzdolabiClicked"
+                        <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding BuzdolabiButonu}"
                     
                         Source="https://img.paratic.com/dosya/2015/05/dunyanin-en-pahali-buzdolaplari-energy-star.jpg" BackgroundColor="White"
                         />

@@ -1,5 +1,6 @@
 ﻿using eShopOnContainers.Core.Models.Item;
 using eShopOnContainers.Core.Services.Marketing;
+using eShopOnContainers.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,12 @@ namespace eShopOnContainers.Core.Views
         public Aramalar()
         {
             InitializeComponent();
+            BindingContext = new AramalarViewModel();
+
         }
 
         protected async override void OnAppearing()
         {
-
             base.OnAppearing();
             var urunler = await productService.GetAllProduct();
             urunListesi.ItemsSource = urunler;

@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.AnaSayfa">
+             x:Class="eShopOnContainers.Core.Views.AnaSayfa"
+             xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:DataType="viewmodels:AnasayfaViewModel">
     <Shell.TitleView >
 
-        <Image Source="https://marka-logo.com/wp-content/uploads/2020/12/Carrefour-Logo-1966-1972.jpg"
+        <Image Source="https://iadeal.com/iadeal-markalar/istegelsin_iadeal.jpg"
            HorizontalOptions="Center"
            VerticalOptions="Center"
                
@@ -39,12 +41,12 @@
 
 
                 <StackLayout HeightRequest="100" Padding="5">
-                    <Frame CornerRadius="10" IsClippedToBounds="True" Padding="-15">
-                        <CarouselView x:Name="Slider"   >
+                    <Frame BorderColor="#FD1919" CornerRadius="10" IsClippedToBounds="True" Padding="-15">
+                        <CarouselView x:Name="fotolar" >
 
                             <CarouselView.ItemTemplate>
 
-                                <DataTemplate>
+                                <DataTemplate >
                                     <Image
                                 Source="{Binding}"
                                 />
@@ -65,9 +67,9 @@
 
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="MeyveSebzeClicked" BackgroundColor="White"
+                            <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding MeyveSebzeButonu}" BackgroundColor="White"
                     
                             Source="https://aslimgida.com/images/giris-meyveler.jpg"
                             />
@@ -80,9 +82,9 @@
                     </StackLayout>
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                            <ImageButton HeightRequest="80" WidthRequest="80"  Clicked="EtBalikKumesClicked" BackgroundColor="White"
+                            <ImageButton HeightRequest="80" WidthRequest="80"  Command="{Binding EtBalikKumesButonu}" BackgroundColor="White"
                     
                             Source="https://haber50com.teimg.com/crop/1280x720/haber50-com/uploads/2022/04/et.jpg" 
                             />
@@ -95,9 +97,9 @@
                     </StackLayout>
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="SutKahvaltilikClicked" BackgroundColor="White"
+                            <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding SutKahvaltilikButonu}" BackgroundColor="White"
                     
                             Source="http://iyikahvalti.com/wp-content/uploads/2017/05/milk-500_0.jpg"
                                
@@ -116,9 +118,9 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="İceceklerClicked"
+                            <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding İceceklerButonu}"
                     
                             Source="https://order.com.tr/library/SogukIcecek-1577092527.jpg" BackgroundColor="White"
                             />
@@ -131,9 +133,9 @@
                     </StackLayout>
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="ElektronikClicked" 
+                            <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding ElektronikButonu}" 
                     
                              Source="https://img1.exportersindia.com/product_images/bc-full/dir_52/1554810/samsung-ue55d8000-3d-tv-276683.jpg" BackgroundColor="White" 
                             />
@@ -146,9 +148,9 @@
                     </StackLayout>
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
-                            <ImageButton HeightRequest="80" WidthRequest="80" Clicked="BebekDunyasiClicked"
+                            <ImageButton HeightRequest="80" WidthRequest="80" Command="{Binding BebekDunyasiButonu}"
                     
                             Source="https://www.meltemhastanesi.com/uploads/images/1514898987964-bebek-gelisimi.jpg" BackgroundColor="White" 
                                 
@@ -169,7 +171,7 @@
                     <StackLayout >
 
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
                             <ImageButton HeightRequest="80" WidthRequest="80"
                     
                                 Source="https://www.7kkurumsaltemizlik.com/wp-content/uploads/zeytinburnu-kurumsal-toptan-temizlik-malzemeleri-tedarikcisi.jpg" BackgroundColor="White"
@@ -181,7 +183,7 @@
                     </StackLayout>
                     <StackLayout >
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
                             <ImageButton HeightRequest="80" WidthRequest="80" HorizontalOptions="Fill"
                     
@@ -197,7 +199,7 @@
                     <StackLayout >
 
 
-                        <Frame BorderColor="LightGray" CornerRadius="8">
+                        <Frame BorderColor="#FD1919" CornerRadius="8">
 
                             <ImageButton HeightRequest="80" WidthRequest="80" HorizontalOptions="Fill"
                     

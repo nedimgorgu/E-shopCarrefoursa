@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eShopOnContainers.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,16 +16,9 @@ namespace eShopOnContainers.Core.Views
         public AltKategori2()
         {
             InitializeComponent();
+            BindingContext = new AltKategori2ViewModel(Navigation);
         }
 
-        private async void MeyveClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new MeyveView());
-        }
-
-        private async void SebzeClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new SebzeView());
-        }
+        
     }
 }

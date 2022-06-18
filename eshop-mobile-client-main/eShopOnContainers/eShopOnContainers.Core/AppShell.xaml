@@ -8,12 +8,12 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#0192FF" />
+                <Setter Property="Shell.BackgroundColor" Value="#FD1919" />
                 <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Dark={StaticResource DarkForegroundColor}, Light={StaticResource LightForegroundColor}}" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#CCCC" />
                 <Setter Property="Shell.UnselectedColor" Value="#CCCC" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="#0192FF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#FD1919" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White" />
                 <Setter Property="Shell.TabBarUnselectedColor" Value="White" />
                 <Setter Property="Shell.TabBarTitleColor" Value="Black" />
@@ -33,6 +33,8 @@
     <TabBar Route="Main">
         <ShellContent Title="Ana Sayfa" Route="Catalog" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:AnaSayfa}" />
         <ShellContent Title="Arama" Icon="https://pics.freeicons.io/uploads/icons/png/15028084081543238917-512.png" ContentTemplate="{DataTemplate views:Aramalar}" />
+        <ShellContent Title="Favoriler" Icon="https://pics.freeicons.io/uploads/icons/png/21452079141582962144-512.png" ContentTemplate="{DataTemplate views:Favoriler}" />
+        <ShellContent Title="Sepetim" Icon="https://pics.freeicons.io/uploads/icons/png/13605203221582807759-512.png" ContentTemplate="{DataTemplate views:Sepet}" />
         <ShellContent Title="Profile"  Route="Profile" Icon="{StaticResource ProfileIconImageSource}" ContentTemplate="{DataTemplate views:ProfileView}" />
     </TabBar>
 </Shell>

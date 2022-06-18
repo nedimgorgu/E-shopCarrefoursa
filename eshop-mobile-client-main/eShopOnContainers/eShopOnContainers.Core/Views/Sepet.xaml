@@ -1,25 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:pages="clr-namespace:eShopOnContainers.Core.ViewModels"
-             x:Class="eShopOnContainers.Core.Views.SebzeView"
-             >
-
-    <ContentPage.BindingContext>
-        <pages:SebzeViewModel></pages:SebzeViewModel>
-    </ContentPage.BindingContext>
+             x:Class="eShopOnContainers.Core.Views.Sepet">
     <ContentPage.Content>
         <StackLayout>
 
 
-            <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5">
-                <SearchBar Placeholder="Sebze Ara" BackgroundColor="White" />
-            </Frame>
 
 
             <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="Center" Padding="10">
 
-                <ListView ItemTapped="sebzeListesi_ItemTapped" ItemsSource="{Binding SebzeListesi}" x:Name="sebzeListesi" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"
+                <ListView x:Name="sepettekiUrunler" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"
                             SeparatorColor="LightGray" SeparatorVisibility="Default" HasUnevenRows="True" 
                             >
 
@@ -39,14 +30,19 @@
 
                                         <StackLayout Orientation="Vertical" Padding="2" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
 
+                                            <StackLayout>
+
+
+                                                <ImageButton Source="https://pics.freeicons.io/uploads/icons/png/14974663671582988848-512.png" BackgroundColor="White" HorizontalOptions="Start" Clicked="ImageButton_Clicked" WidthRequest="25"></ImageButton>
+
+
+
+
+                                            </StackLayout>
+
                                             <Image Source="{Binding ProductImageUrl}" WidthRequest="100" HeightRequest="100"/>
                                             <Label Text="{Binding ProductName}" FontSize="20" Margin="2" TextColor="Black" FontAttributes="Bold"/>
                                             <Label Text="{Binding UnitPrice}" FontSize="16" Margin="2" TextColor="#eb3443"/>
-                                            <StackLayout Orientation="Horizontal">
-                                                <Button Text="Sepete Ekle"  HorizontalOptions="Start"  CornerRadius="25" Clicked="Button_Clicked"/>
-                                                <ImageButton Source="https://pics.freeicons.io/uploads/icons/png/21452079141582962144-512.png" HeightRequest="30" BackgroundColor="White"  Clicked="ImageButton_Clicked"/>
-                                            </StackLayout>
-
 
 
                                         </StackLayout>
@@ -63,7 +59,19 @@
 
                 </ListView>
 
+                <StackLayout Orientation="Horizontal" >
+
+                    <Label Text="Fiyat toplamı : " />
+                    <Label x:Name="toplamFiyat"  />
+
+
+                </StackLayout>
+
             </StackLayout>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
